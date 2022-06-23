@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <Button
+        android:id="@+id/button_pill_remainder"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:onClick="goToPillRemainder"
+        android:text="@string/pill_remainder"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calendar"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_calendar"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:onClick="goToCalendar"
+        android:text="@string/calendar"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/button_pill_remainder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_referrals"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_referrals"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:onClick="goToReferrals"
+        android:text="@string/referrals"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/button_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_medicine"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_medicine"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:onClick="goToMedicines"
+        android:text="@string/medicines"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/button_referrals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="239dp"
+        android:layout_height="180dp"
+        android:contentDescription="@string/logo_description"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_medicine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_long"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

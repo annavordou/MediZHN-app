@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediZHN" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/secondaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryDarkColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primaryDarkColor</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MediZHN.CardView"  parent="CardView.Dark">
+        <item name="cardBackgroundColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="Theme.MediZHN.Popups">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <!--header background-->
+        <item name="colorAccent">@color/primaryColor</item>
+        <!--selected day-->
+        <item name="android:colorControlActivated">@color/secondaryDarkColor</item>
+        <!--days of the month-->
+        <item name="android:textColorPrimary">@color/primaryColor</item>
+        <!--days of the week-->
+        <item name="android:textColorSecondary">@color/secondaryColor</item>
+        <item name="android:headerBackground">@color/primaryDarkColor</item>
+        <item name="android:background">@color/calendarDark</item>
+    </style>
+
+
+</resources>

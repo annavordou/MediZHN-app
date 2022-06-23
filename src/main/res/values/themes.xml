@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediZHN" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorOnSecondary">@color/primaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MediZHN.CardView" parent="CardView.Light">
+        <item name="cardBackgroundColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Theme.MediZHN.Popups" parent="android:Theme.Light">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="DialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <!--header background-->
+        <item name="colorAccent">@color/primaryColor</item>
+        <!--selected day-->
+        <item name="android:colorControlActivated">@color/secondaryColor</item>
+        <!--days of the month-->
+        <item name="android:textColorPrimary">@color/primaryDarkColor</item>
+        <!--days of the week-->
+        <item name="android:textColorSecondary">@color/secondaryDarkColor</item>
+        <item name="android:background">@color/calendarlight</item>
+    </style>
+
+    <style name="Theme.MediZHN.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MediZHN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MediZHN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

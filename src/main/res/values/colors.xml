@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#7e57c2</color>
+    <color name="primaryLightColor">#b085f5</color>
+    <color name="calendarlight">#dfd7f5</color>
+    <color name="calendarDark">#201e24</color>
+    <color name="primaryDarkColor">#4d2c91</color>
+    <color name="secondaryColor">#69efad</color>
+    <color name="secondaryLightColor">#9fffdf</color>
+    <color name="secondaryDarkColor">#2bbc7d</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+</resources>
